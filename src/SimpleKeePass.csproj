@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>netstandard2.0</TargetFramework>
+	<AssemblyName>SimpleKeePass</AssemblyName>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="PowerShellStandard.Library" Version="5.1.0">
+	  <PrivateAssets>All</PrivateAssets>
+	</PackageReference>
+	<PackageReference Include="pt.KeePassLibStd" Version="2.46.0.3858" />
+  </ItemGroup>
+
+</Project>
