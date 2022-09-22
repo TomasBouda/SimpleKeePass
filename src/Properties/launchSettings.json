@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SimpleKeePass": {
+      "commandName": "Executable",
+      "executablePath": "pwsh",
+      "commandLineArgs": "-file C:\\Data\\GIT\\SimpleKeePass\\test.ps1"
+    }
+  }
+}

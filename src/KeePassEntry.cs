@@ -23,7 +23,11 @@ namespace SimpleKeePass
 			Password = originalEntry.Strings.ReadSafe("Password").ToSecureString();
 			Url = originalEntry.Strings.ReadSafe("URL");
 			Notes = originalEntry.Strings.ReadSafe("Notes");
-			Credential = new PSCredential(Username, Password);
+
+			if (!string.IsNullOrEmpty(Username))
+			{
+				Credential = new PSCredential(Username, Password);
+			}
 		}
 	}
 }
